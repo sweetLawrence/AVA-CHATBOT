@@ -13,7 +13,9 @@ app.use(bodyParser.json());
 const pocketbaseAPI = axios.create({
     baseURL: 'https://offering.pockethost.io/api/collections/Messages',
 });
-
+app.get('/',(req,res)=>{
+    res.json("Hellow");
+})
 app.post('/messages', async (req, res) => {
     try {
 
