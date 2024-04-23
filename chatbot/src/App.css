@@ -68,7 +68,9 @@ body {
 .logo {
   /* background: red; */
   padding: 0.9em;
+  
   border-radius: 20px 20px 0 0;
+  border-top: 1px solid #2c3494;
   font-weight: 700;
   font-size: 1.3em;
   text-align: start;
