@@ -107,6 +107,8 @@ body {
   box-shadow: 0 -1px 1px #e7eaed;
   padding: 0.4em;
   border-radius: 10px;
+  border-bottom: .5px solid #2c3494;
+
 }
 .output input {
   width: 70%;
