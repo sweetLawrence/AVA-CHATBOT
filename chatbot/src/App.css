@@ -58,7 +58,7 @@ body {
   color: #d6d7ea;
   background: #036cff;
   background: #2c3494;
-  font-weight: 100;
+  font-weight: 700;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 
   padding: 0 0.5em;
@@ -170,7 +170,7 @@ body {
   .container {
     width: 100%;
     /* margin: 0 auto; */
-    height: 95vh;
+    height: 75vh;
   }
   .chat {
     width: 100%;
