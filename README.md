@@ -20,15 +20,15 @@ To run AVA locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/ava-chatbot.git
+   https://github.com/sweetLawrence/AVA-CHATBOT.git
    ```
 
 2. Install dependencies for both frontend and backend:
 
    ```bash
-   cd ava-chatbot
+   cd chatbot
    npm install
-   cd client
+   cd chatbot-server
    npm install
    ```
 
