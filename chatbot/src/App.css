@@ -177,5 +177,6 @@ body {
   }
   body{
     background: #d6d7ea;
+    overflow: hidden;
   }
 }

@@ -22,7 +22,7 @@ const Chat = () => {
     const intervalId = setInterval(() => {
       fetchMessages();
     }, 1000);
-    scrollToBottom();
+    // scrollToBottom();
     return () => clearInterval(intervalId);
   }, []);
 
@@ -31,7 +31,7 @@ const Chat = () => {
   }, [inputValue]);
 
   useEffect(() => {
-    scrollToBottom();
+    // scrollToBottom();
   }, [messages]);
 
   const fetchMessages = async () => {
