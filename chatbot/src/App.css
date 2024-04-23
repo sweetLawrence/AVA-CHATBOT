@@ -97,7 +97,7 @@ body {
   height: 57px;
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
+  justify-content: center;
   /* background: #00297c; */
   position: absolute;
   bottom: 0.5px;
