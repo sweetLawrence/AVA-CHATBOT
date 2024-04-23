@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const cors = require("cors");
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 const axios = require('axios');
-
+//   "rewrites": [{ "source": "/(.*)", "destination": "/api" }]
 const app = express();
 const port = process.env.PORT || 3001;
 app.use(cors());
