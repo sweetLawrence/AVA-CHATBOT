@@ -27,11 +27,11 @@ const Chat = () => {
   }, []);
 
   useEffect(() => {
-    scrollToBottom();
+    // scrollToBottom();
   }, [inputValue]);
 
   useEffect(() => {
-    // scrollToBottom();
+    scrollToBottom();
   }, [messages]);
 
   const fetchMessages = async () => {
