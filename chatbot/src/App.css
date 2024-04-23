@@ -94,13 +94,13 @@ body {
   color: #3f596e;
 }
 .output {
-  height: 55px;
+  height: 57px;
   display: flex;
   align-items: center;
   /* justify-content: space-between; */
   /* background: #00297c; */
   position: absolute;
-  bottom: 0;
+  bottom: 0.5px;
   width: 100%;
   /* margin-bottom: 0.4em; */
   background: #edf4f6;
