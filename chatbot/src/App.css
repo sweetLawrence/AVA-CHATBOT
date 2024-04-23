@@ -1,0 +1,181 @@
+#root {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background: black;
+}
+.container {
+  border: 1px solid #333333;
+  border-radius: 20px;
+  width: 50%;
+  margin: 0 auto;
+  height: 500px;
+  position: relative;
+  background: #edf4f6;
+  /* background: #333333; */
+}
+.messages {
+  height: 380px;
+  /* background: red; */
+  /* border-radius: 20px; */
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  /* background: #00297c; */
+  background: #edf4f6;
+  font-weight: 200;
+  /* background: #333333; */
+}
+.info {
+  color: white;
+  /* flex-grow: 1; */
+  /* background: #00297c; */
+  text-align: start;
+  margin: 0.2em;
+  margin-top: 0.2em;
+  padding-left: 0.5em;
+  display: inline-block;
+  /* min-height: 50px; */
+  /* max-height: 400px; */
+  /* max-height: auto; */
+  width: 95%;
+  font-weight: 700;
+  border-radius: 10px;
+  /* background: #70bcee; */
+  word-wrap: break-word;
+  /* background: #00297c; */
+  font-size: 0.9em;
+  color: #333333;
+  background: #333333;
+  color: #d6d7ea;
+  background: #036cff;
+  background: #2c3494;
+  font-weight: 100;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+  padding: 0 0.5em;
+  font-family: 'Courier New', Courier, monospace;
+  /* padding: .9em; */
+}
+.logo {
+  /* background: red; */
+  padding: 0.9em;
+  border-radius: 20px 20px 0 0;
+  font-weight: 700;
+  font-size: 1.3em;
+  text-align: start;
+  color: black;
+  font-weight: bold;
+  background: #00297c;
+  background: #edf4f6;
+  border-bottom: 1px solid black;
+  /* background: #333333; */
+  box-shadow: 0 1px 1px #333333;
+  background: #2c3494;
+  color: #fdfdfe;
+}
+
+.sent {
+  background: #2c3494;
+  color: #d6d7ea;
+}
+.received {
+  background: #e7eaed;
+  color: #3f596e;
+}
+.output {
+  height: 55px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* background: #00297c; */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* margin-bottom: 0.4em; */
+  background: #edf4f6;
+  box-shadow: 0 -1px 1px #e7eaed;
+  padding: 0.4em;
+  border-radius: 10px;
+}
+.output input {
+  width: 70%;
+  height: 80%;
+  outline: none;
+  /* border: none; */
+  border-radius: 10px;
+  margin: 0.3em;
+  padding-left: 0.6em;
+  font-size: 0.9em;
+  font-weight: 700;
+  background: #333333;
+  color: white;
+  border: 0.1px solid black;
+  background: #f2f2f2;
+  color: #adb7bf;
+  color: black;
+}
+.output button {
+  outline: none;
+  background: #00297c;
+  color: white;
+  /* padding: .4em; */
+  width: 20%;
+  height: 95%;
+  border: #00297c;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 3px solid white;
+  border-left-color: #00297c;
+  animation: spinner 0.5s infinite forwards ease-in-out;
+}
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar for WebKit/Blink */
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  #root{
+    padding: 3% 0;
+  }
+  .container {
+    width: 100%;
+    /* margin: 0 auto; */
+    height: 95vh;
+  }
+  .chat {
+    width: 100%;
+  }
+  body{
+    background: #d6d7ea;
+  }
+}
