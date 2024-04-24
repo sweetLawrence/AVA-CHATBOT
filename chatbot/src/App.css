@@ -104,6 +104,7 @@ body {
   width: 98%;
   /* margin-bottom: 0.4em; */
   background: #edf4f6;
+  background: transparent;
   box-shadow: 0 -1px 1px #e7eaed;
   padding: 0.4em;
   border-radius: 10px;
