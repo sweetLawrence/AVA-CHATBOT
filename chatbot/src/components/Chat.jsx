@@ -31,7 +31,7 @@ const Chat = () => {
   }, [inputValue]);
 
   useEffect(() => {
-    scrollToBottom();
+    // scrollToBottom();
   }, [messages]);
 
   const fetchMessages = async () => {
