@@ -51,7 +51,7 @@ const Chat = () => {
     try {
       if (inputValue.trim() !== "") {
         setSending(true);
-        const response = await axios.post("http://localhost:3001/messages", {
+        const response = await axios.post("https://ava-api.onrender.com/messages", {
           message: inputValue,
         });
 
