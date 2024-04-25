@@ -26,7 +26,6 @@ app.post('/messages', async (req, res) => {
             sender: "YOU"
         });
 
-        // I know!!!, the API KEY IS EXPOSED 😂, change it to yours jameni 
         const genAI = new GoogleGenerativeAI("AIzaSyCGWaqaMOBG8FAW69uhbhCyxGBx7Svc3d8");
         const model = genAI.getGenerativeModel({ model: "gemini-pro" });
 
@@ -44,7 +43,7 @@ app.post('/messages', async (req, res) => {
             }
 
             if (isNameQuestion(prompt)) {
-                text = "My Name is Ava. I was developed and am presently managed by Lawrence Tsungu, who serves as the CEO and Co-Founder of Pawtech Labs.";
+                text = "My Name is Ava.";
             }
 
             await pocketbaseAPI.post('/records', {
@@ -67,11 +66,6 @@ app.post('/messages', async (req, res) => {
 });
 
 
-
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 });
-
-
-// AIzaSyCGWaqaMOBG8FAW69uhbhCyxGBx7Svc3d8
-// const openai = new OpenAI({apiKey:"sk-proj-2vKhfsLuZFb55Pt56PNyT3BlbkFJCXXNADhOB5Yh7peq9Z7U"});

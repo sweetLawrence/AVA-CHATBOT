@@ -1,9 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import Spinner from "./Spinner";
-// import SendIcon from '@mui/icons-material/Send';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+
 import { FaPaperPlane } from "react-icons/fa";
 
 const Chat = () => {
@@ -37,7 +35,6 @@ const Chat = () => {
   const fetchMessages = async () => {
     try {
       const response = await axios.get(
-         // weka endpoint yako tafadhali, usijaze my pocketbase puriiiiiiisssssssssss 😂😁😉
         "https://offering.pockethost.io/api/collections/Messages/records"
       );
       console.log(response.data.items);
